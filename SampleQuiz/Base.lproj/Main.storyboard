@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="〇〇クイズ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOl-bk-Vyb">
-                                <rect key="frame" x="81.5" y="164" width="251" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="クイズアプリ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOl-bk-Vyb">
+                                <rect key="frame" x="56" y="164" width="302" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -37,6 +37,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rWg-Rn-frf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7so-tC-y8q"/>
+                            <constraint firstItem="aOl-bk-Vyb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aQ7-jy-tjC"/>
                             <constraint firstItem="aOl-bk-Vyb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kB3-qC-gNh"/>
                             <constraint firstItem="aOl-bk-Vyb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="uxB-6F-OC1"/>
                             <constraint firstItem="rWg-Rn-frf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yJB-HB-ASH"/>
