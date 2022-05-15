@@ -29,7 +29,7 @@
                                     <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="25"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="9wP-yM-Xhm" kind="presentation" id="hTK-ca-PUK"/>
+                                    <segue destination="v6z-eX-Knp" kind="presentation" id="5J0-Q6-hef"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -145,7 +145,70 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LPn-CI-R8z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="818.84057971014499" y="71.651785714285708"/>
+            <point key="canvasLocation" x="1881" y="72"/>
+        </scene>
+        <!--Select Level View Controller-->
+        <scene sceneID="O55-Oi-6Hh">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="v6z-eX-Knp" customClass="SelectLevelViewController" customModule="SampleQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8AK-hX-sUb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="難易度を選択してください。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsu-pT-bIe">
+                                <rect key="frame" x="42" y="94" width="330" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKH-VG-x2d">
+                                <rect key="frame" x="140" y="424" width="134" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="レベル1">
+                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="levelButtonActionWithSender:" destination="v6z-eX-Knp" eventType="touchUpInside" id="vzW-Gz-DtQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbt-Sn-Q9S">
+                                <rect key="frame" x="140" y="612" width="134" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="レベル3">
+                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="levelButtonActionWithSender:" destination="v6z-eX-Knp" eventType="touchUpInside" id="lX5-y1-uFf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWU-Qp-6gd">
+                                <rect key="frame" x="140" y="518" width="134" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="レベル2">
+                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="levelButtonActionWithSender:" destination="v6z-eX-Knp" eventType="touchUpInside" id="KhK-E2-0yu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MDc-zJ-AZe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IWU-Qp-6gd" firstAttribute="top" secondItem="iKH-VG-x2d" secondAttribute="bottom" constant="50" id="3hz-MQ-Rt0"/>
+                            <constraint firstItem="Hsu-pT-bIe" firstAttribute="centerX" secondItem="8AK-hX-sUb" secondAttribute="centerX" id="LiI-T2-EgL"/>
+                            <constraint firstItem="iKH-VG-x2d" firstAttribute="top" secondItem="Hsu-pT-bIe" secondAttribute="bottom" constant="300" id="PfZ-gT-DgY"/>
+                            <constraint firstItem="zbt-Sn-Q9S" firstAttribute="centerX" secondItem="8AK-hX-sUb" secondAttribute="centerX" id="aSP-cl-JQe"/>
+                            <constraint firstItem="IWU-Qp-6gd" firstAttribute="centerX" secondItem="8AK-hX-sUb" secondAttribute="centerX" id="axG-bM-UMx"/>
+                            <constraint firstItem="Hsu-pT-bIe" firstAttribute="top" secondItem="MDc-zJ-AZe" secondAttribute="top" constant="50" id="ghf-AL-Gaq"/>
+                            <constraint firstItem="iKH-VG-x2d" firstAttribute="centerX" secondItem="8AK-hX-sUb" secondAttribute="centerX" id="noM-BK-T3g"/>
+                            <constraint firstItem="zbt-Sn-Q9S" firstAttribute="top" secondItem="IWU-Qp-6gd" secondAttribute="bottom" constant="50" id="uAC-8f-XJe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4fG-ce-2ZK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="961" y="72"/>
         </scene>
         <!--Score View Controller-->
         <scene sceneID="ptl-Lo-GOB">
@@ -183,7 +246,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oti-tl-paf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1686.9565217391305" y="71.651785714285708"/>
+            <point key="canvasLocation" x="2852" y="72"/>
         </scene>
     </scenes>
     <resources>
