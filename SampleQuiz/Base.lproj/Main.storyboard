@@ -205,6 +205,9 @@
                             <constraint firstItem="zbt-Sn-Q9S" firstAttribute="top" secondItem="IWU-Qp-6gd" secondAttribute="bottom" constant="50" id="uAC-8f-XJe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="9wP-yM-Xhm" kind="presentation" identifier="toQuizVC" id="59P-tf-vdc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4fG-ce-2ZK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

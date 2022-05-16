@@ -8,6 +8,8 @@
 import UIKit
 
 class SelectLevelViewController: UIViewController {
+    
+    var selectTag = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,9 +17,19 @@ class SelectLevelViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+//    セグエが走る前に実行するprepareメソッド
+//    問題表示のcontrollerへ、選択したレベルを渡すメソッド
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+//        as!でダウンキャストする。ダウンキャスト->クラスの継承やプロトコルの準拠などの階層関係がある型どうしにおいて、下位の型として扱う操作
+//        as!はダウンキャストの際、強制的に右辺の型にキャストをします（強制キャスト）。
+        let quizVC = segue.destination as! QuizViewController
+        quizVC.selectLevel = selectTag
+    }
+    
 //    ボタン押下時のアクション
     @IBAction func levelButtonAction(sender: UIButton) {
-        print(sender.tag)
+        selectTag = sender.tag
+        performSegue(withIdentifier: "toQuizVC", sender: nil)
     }
     
     

@@ -18,7 +18,9 @@
 		3DA60573282F662A0055EC1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA60571282F662A0055EC1C /* LaunchScreen.storyboard */; };
 		3DA6057B282F68000055EC1C /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6057A282F68000055EC1C /* QuizViewController.swift */; };
 		3DA6057D282F689F0055EC1C /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6057C282F689F0055EC1C /* ScoreViewController.swift */; };
-		3DA6057F282F6F5A0055EC1C /* quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3DA6057E282F6F5A0055EC1C /* quiz.csv */; };
+		3DA6057F282F6F5A0055EC1C /* quiz1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3DA6057E282F6F5A0055EC1C /* quiz1.csv */; };
+		3DB529A7283291AA006EBDEA /* quiz2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3DB529A6283291AA006EBDEA /* quiz2.csv */; };
+		3DB529A9283291F7006EBDEA /* quiz3.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3DB529A8283291F7006EBDEA /* quiz3.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +37,9 @@
 		3DA60574282F662A0055EC1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DA6057A282F68000055EC1C /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		3DA6057C282F689F0055EC1C /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
-		3DA6057E282F6F5A0055EC1C /* quiz.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz.csv; sourceTree = "<group>"; };
+		3DA6057E282F6F5A0055EC1C /* quiz1.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz1.csv; sourceTree = "<group>"; };
+		3DB529A6283291AA006EBDEA /* quiz2.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz2.csv; sourceTree = "<group>"; };
+		3DB529A8283291F7006EBDEA /* quiz3.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz3.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +86,12 @@
 				3DA6056A282F66280055EC1C /* ViewController.swift */,
 				3DA6056C282F66280055EC1C /* Main.storyboard */,
 				3DA15BBA2830BE43004640C0 /* SelectLevelViewController.swift */,
-				3DA6057E282F6F5A0055EC1C /* quiz.csv */,
+				3DA6057E282F6F5A0055EC1C /* quiz1.csv */,
 				3DA6057C282F689F0055EC1C /* ScoreViewController.swift */,
 				3D2B9532282FC98E00DDA7C8 /* image */,
 				3DA6057A282F68000055EC1C /* QuizViewController.swift */,
+				3DB529A6283291AA006EBDEA /* quiz2.csv */,
+				3DB529A8283291F7006EBDEA /* quiz3.csv */,
 				3DA6056F282F662A0055EC1C /* Assets.xcassets */,
 				3DA60571282F662A0055EC1C /* LaunchScreen.storyboard */,
 				3DA60574282F662A0055EC1C /* Info.plist */,
@@ -151,12 +157,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB529A7283291AA006EBDEA /* quiz2.csv in Resources */,
 				3D2B9535282FC98E00DDA7C8 /* correct.png in Resources */,
 				3D2B9536282FC98E00DDA7C8 /* incorrect.png in Resources */,
 				3DA60573282F662A0055EC1C /* LaunchScreen.storyboard in Resources */,
 				3DA60570282F662A0055EC1C /* Assets.xcassets in Resources */,
 				3DA6056E282F66280055EC1C /* Main.storyboard in Resources */,
-				3DA6057F282F6F5A0055EC1C /* quiz.csv in Resources */,
+				3DA6057F282F6F5A0055EC1C /* quiz1.csv in Resources */,
+				3DB529A9283291F7006EBDEA /* quiz3.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

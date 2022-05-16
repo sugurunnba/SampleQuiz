@@ -23,7 +23,7 @@ class ScoreViewController: UIViewController {
     @IBAction func toTopButtonAction(_ sender: Any) {
 //        2つの画面を同時に閉じる処理
 //        self(自分自身の).presentingViewController?(スコア画面と).presentingViewController?(問題画面を).dismiss(破棄する)(animated: true or false(アニメーションを入れるかどうか))
-        self.presentingViewController?.presentingViewController?.dismiss(animated: true)
+        self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true)
     }
 
     

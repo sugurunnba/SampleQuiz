@@ -25,12 +25,16 @@ class QuizViewController: UIViewController {
     var quizCount = 0
 //    スコアを表示するときに使うcount
     var correctCount = 0
+//    選択した問題のレベルを格納する変数
+    var selectLevel = 0
 
 //    画面を表示したときに実行するコード
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        csvArray = loadCSV(fileName: "quiz")
+        print("選択したのはレベル\(selectLevel)です")
+        
+        csvArray = loadCSV(fileName: "quiz\(selectLevel)")
         
 //        csvArrayの0行目をカンマ区切りでquizArrayに代入する
         quizArray = csvArray[quizCount].components(separatedBy: ",")
