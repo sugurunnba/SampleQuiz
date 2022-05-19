@@ -19,6 +19,13 @@ class ScoreViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func shareButtonAction(_ sender: Any) {
+        let activityItems = ["\(correct)問正解しました。","#クイズアプリ"]
+        let activityVC = UIActivityViewController(activityItems: activityItems,applicationActivities: nil)
+        self.present(activityVC, animated: true)
+    }
+    
 //    トップ画面に戻る処理 ※セグエで遷移するとメモリを消費してしまうため、dismissメソッドでviewControllerを破棄する
     @IBAction func toTopButtonAction(_ sender: Any) {
 //        2つの画面を同時に閉じる処理

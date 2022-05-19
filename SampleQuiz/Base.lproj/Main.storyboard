@@ -102,7 +102,7 @@
                                     <action selector="btnAction:" destination="9wP-yM-Xhm" eventType="touchUpInside" id="xe5-Lb-9nC"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SMX-Py-M9U">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SMX-Py-M9U">
                                 <rect key="frame" x="20" y="200" width="374" height="264"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -221,9 +221,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4U-gH-5xD">
-                                <rect key="frame" x="0.0" y="77" width="414" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4U-gH-5xD">
+                                <rect key="frame" x="171.5" y="79" width="71" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -239,9 +238,25 @@
                                     <action selector="toTopButtonAction:" destination="0Dr-Av-cUu" eventType="touchUpInside" id="2QH-Hs-Qej"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LU2-bc-JLO">
+                                <rect key="frame" x="75" y="215" width="264" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="結果をシェアする">
+                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="shareButtonAction:" destination="0Dr-Av-cUu" eventType="touchUpInside" id="VuW-aT-FUY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FeO-TK-gwm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LU2-bc-JLO" firstAttribute="top" secondItem="z4U-gH-5xD" secondAttribute="bottom" constant="100" id="2vY-zw-CJe"/>
+                            <constraint firstItem="z4U-gH-5xD" firstAttribute="centerX" secondItem="Ud6-Im-qga" secondAttribute="centerX" id="30F-LV-1CQ"/>
+                            <constraint firstItem="LU2-bc-JLO" firstAttribute="centerX" secondItem="Ud6-Im-qga" secondAttribute="centerX" id="W8G-e4-ClH"/>
+                            <constraint firstItem="z4U-gH-5xD" firstAttribute="top" secondItem="FeO-TK-gwm" secondAttribute="top" constant="35" id="fuM-ln-lih"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="scoreLabel" destination="z4U-gH-5xD" id="UNl-XN-DDg"/>
