@@ -8,6 +8,8 @@
 import UIKit
 
 class ScoreViewController: UIViewController {
+    @IBOutlet weak var shareButton: UIButton!
+    @IBOutlet weak var returnTopButton: UIButton!
     @IBOutlet weak var scoreLabel: UILabel!
     
     var correct = 0
@@ -16,6 +18,11 @@ class ScoreViewController: UIViewController {
         super.viewDidLoad()
         
         scoreLabel.text = "\(correct)問正解"
+        
+        shareButton.layer.borderWidth = 2
+        shareButton.layer.borderColor = UIColor.black.cgColor
+        returnTopButton.layer.borderWidth = 2
+        returnTopButton.layer.borderColor = UIColor.black.cgColor
 
         // Do any additional setup after loading the view.
     }
@@ -23,6 +30,7 @@ class ScoreViewController: UIViewController {
     @IBAction func shareButtonAction(_ sender: Any) {
         let activityItems = ["\(correct)問正解しました。","#クイズアプリ"]
         let activityVC = UIActivityViewController(activityItems: activityItems,applicationActivities: nil)
+//        present -> 画面遷移のメソッド。activityVCの画面へアニメーションをオンにして遷移する
         self.present(activityVC, animated: true)
     }
     

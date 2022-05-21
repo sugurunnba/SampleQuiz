@@ -18,12 +18,18 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="クイズアプリ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOl-bk-Vyb">
                                 <rect key="frame" x="56" y="164" width="302" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWg-Rn-frf">
-                                <rect key="frame" x="145" y="428.5" width="124" height="39"/>
+                                <rect key="frame" x="107" y="413" width="200" height="70"/>
+                                <color key="backgroundColor" red="0.96862751250000001" green="0.63627451660000001" blue="0.043137256059999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="NBe-Mq-fT6"/>
+                                    <constraint firstAttribute="height" constant="70" id="z6m-dg-enA"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="スタート">
                                     <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="25"/>
@@ -34,19 +40,26 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.70980393886566162" green="0.93333339691162109" blue="0.68627452850341797" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="rWg-Rn-frf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7so-tC-y8q"/>
+                            <constraint firstItem="rWg-Rn-frf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q70-qw-GO9"/>
                             <constraint firstItem="aOl-bk-Vyb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aQ7-jy-tjC"/>
                             <constraint firstItem="aOl-bk-Vyb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kB3-qC-gNh"/>
+                            <constraint firstItem="rWg-Rn-frf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lwA-k2-Mcb"/>
+                            <constraint firstItem="rWg-Rn-frf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nG2-sd-eWs"/>
                             <constraint firstItem="aOl-bk-Vyb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="uxB-6F-OC1"/>
+                            <constraint firstItem="rWg-Rn-frf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wir-cr-neE"/>
                             <constraint firstItem="rWg-Rn-frf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yJB-HB-ASH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="startButton" destination="rWg-Rn-frf" id="mdU-rd-mtS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="72"/>
+            <point key="canvasLocation" x="18.840579710144929" y="71.651785714285708"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="LH7-ob-rX5">
@@ -57,13 +70,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySI-sm-21b">
-                                <rect key="frame" x="171.5" y="124" width="71" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <rect key="frame" x="169" y="124" width="76.5" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQA-hd-PDJ">
-                                <rect key="frame" x="159" y="540" width="96.5" height="43"/>
+                                <rect key="frame" x="57" y="512" width="300" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dn4-U9-FXh"/>
+                                    <constraint firstAttribute="width" constant="300" id="duG-PH-iTm"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
@@ -73,7 +92,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euJ-kR-cBa">
-                                <rect key="frame" x="159" y="623" width="96.5" height="43"/>
+                                <rect key="frame" x="57" y="602" width="300" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZBR-Ok-tVU"/>
+                                    <constraint firstAttribute="width" constant="300" id="dwR-P6-n8I"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
@@ -83,7 +108,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="As4-gL-mEn">
-                                <rect key="frame" x="159" y="706" width="96.5" height="43"/>
+                                <rect key="frame" x="57" y="692" width="300" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="UR5-vh-cET"/>
+                                    <constraint firstAttribute="height" constant="50" id="gN6-we-wdE"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
@@ -93,7 +124,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f69-J0-TCu">
-                                <rect key="frame" x="159" y="789" width="96.5" height="43"/>
+                                <rect key="frame" x="57" y="782" width="300" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="KjH-Fn-zDr"/>
+                                    <constraint firstAttribute="width" constant="300" id="hjw-fH-Q0y"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
@@ -105,7 +142,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SMX-Py-M9U">
                                 <rect key="frame" x="20" y="200" width="374" height="264"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.74215686319999996" green="0.93431377410000005" blue="0.71862745289999996" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -117,19 +154,23 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Pj7-2k-NeV"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.74215686319999996" green="0.93431377410000005" blue="0.71862745289999996" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="euJ-kR-cBa" firstAttribute="top" secondItem="jQA-hd-PDJ" secondAttribute="bottom" constant="40" id="2kt-wX-ORL"/>
                             <constraint firstItem="ySI-sm-21b" firstAttribute="top" secondItem="Pj7-2k-NeV" secondAttribute="top" constant="80" id="5I4-Ly-qW1"/>
                             <constraint firstItem="ySI-sm-21b" firstAttribute="centerX" secondItem="VPs-we-OWp" secondAttribute="centerX" id="Cg7-Tt-ZDc"/>
                             <constraint firstItem="euJ-kR-cBa" firstAttribute="centerX" secondItem="VPs-we-OWp" secondAttribute="centerX" id="EbQ-Rf-EwD"/>
+                            <constraint firstItem="f69-J0-TCu" firstAttribute="centerX" secondItem="VPs-we-OWp" secondAttribute="centerX" id="Jef-T0-f3c"/>
                             <constraint firstItem="Pj7-2k-NeV" firstAttribute="bottom" secondItem="f69-J0-TCu" secondAttribute="bottom" constant="30" id="NM5-Me-xyV"/>
+                            <constraint firstItem="As4-gL-mEn" firstAttribute="centerX" secondItem="VPs-we-OWp" secondAttribute="centerX" id="VOm-ps-Mj6"/>
                             <constraint firstItem="ySI-sm-21b" firstAttribute="centerX" secondItem="VPs-we-OWp" secondAttribute="centerX" id="eIR-pB-4Ck"/>
                             <constraint firstItem="f69-J0-TCu" firstAttribute="top" secondItem="As4-gL-mEn" secondAttribute="bottom" constant="40" id="lSK-gp-7TE"/>
                             <constraint firstItem="As4-gL-mEn" firstAttribute="top" secondItem="euJ-kR-cBa" secondAttribute="bottom" constant="40" id="nle-5e-qhd"/>
                             <constraint firstItem="f69-J0-TCu" firstAttribute="centerX" secondItem="VPs-we-OWp" secondAttribute="centerX" id="qp8-Qb-I4b"/>
                             <constraint firstItem="jQA-hd-PDJ" firstAttribute="centerX" secondItem="VPs-we-OWp" secondAttribute="centerX" id="tHx-ao-BuY"/>
                             <constraint firstItem="As4-gL-mEn" firstAttribute="centerX" secondItem="VPs-we-OWp" secondAttribute="centerX" id="und-Qd-X6H"/>
+                            <constraint firstItem="euJ-kR-cBa" firstAttribute="centerX" secondItem="VPs-we-OWp" secondAttribute="centerX" id="wb2-p4-9J0"/>
+                            <constraint firstItem="jQA-hd-PDJ" firstAttribute="centerX" secondItem="VPs-we-OWp" secondAttribute="centerX" id="yRM-k6-dlm"/>
                         </constraints>
                     </view>
                     <connections>
@@ -157,12 +198,19 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="難易度を選択してください。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsu-pT-bIe">
                                 <rect key="frame" x="42" y="94" width="330" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKH-VG-x2d">
-                                <rect key="frame" x="140" y="424" width="134" height="44"/>
+                                <rect key="frame" x="107" y="424" width="200" height="70"/>
+                                <color key="backgroundColor" red="0.94509810209274292" green="0.0" blue="0.070343144237995148" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="F8I-MN-F17"/>
+                                    <constraint firstAttribute="width" constant="200" id="ffA-6G-H9g"/>
+                                    <constraint firstAttribute="height" constant="70" id="nR3-wi-Rp0"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="レベル1">
                                     <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="30"/>
@@ -172,7 +220,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbt-Sn-Q9S">
-                                <rect key="frame" x="140" y="612" width="134" height="44"/>
+                                <rect key="frame" x="107" y="664" width="200" height="70"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="VTl-Vu-oj3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="cvC-dz-FqN"/>
+                                    <constraint firstAttribute="height" constant="70" id="eNf-2q-1no"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="レベル3">
                                     <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="30"/>
@@ -182,7 +237,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWU-Qp-6gd">
-                                <rect key="frame" x="140" y="518" width="134" height="44"/>
+                                <rect key="frame" x="107" y="544" width="200" height="70"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Kaf-du-vFU"/>
+                                    <constraint firstAttribute="width" constant="200" id="SDm-53-WQh"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="fM4-tg-ULY"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="レベル2">
                                     <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="30"/>
@@ -193,7 +255,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MDc-zJ-AZe"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.74215686321258545" green="0.93431377410888672" blue="0.7186274528503418" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="IWU-Qp-6gd" firstAttribute="top" secondItem="iKH-VG-x2d" secondAttribute="bottom" constant="50" id="3hz-MQ-Rt0"/>
                             <constraint firstItem="Hsu-pT-bIe" firstAttribute="centerX" secondItem="8AK-hX-sUb" secondAttribute="centerX" id="LiI-T2-EgL"/>
@@ -206,6 +268,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="lebel1Button" destination="iKH-VG-x2d" id="HZk-74-Z55"/>
+                        <outlet property="lebel2Button" destination="IWU-Qp-6gd" id="xpd-mD-MES"/>
+                        <outlet property="lebel3Button" destination="zbt-Sn-Q9S" id="D7a-Ej-1dQ"/>
                         <segue destination="9wP-yM-Xhm" kind="presentation" identifier="toQuizVC" id="59P-tf-vdc"/>
                     </connections>
                 </viewController>
@@ -222,14 +287,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4U-gH-5xD">
-                                <rect key="frame" x="171.5" y="79" width="71" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <rect key="frame" x="169" y="79" width="76.5" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCk-1o-Fab">
-                                <rect key="frame" x="107" y="500" width="203" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCk-1o-Fab">
+                                <rect key="frame" x="57" y="495" width="300" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="AcO-xg-mzL"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Ckr-Wy-naC"/>
+                                    <constraint firstAttribute="width" constant="300" id="IBV-po-YKf"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="Mwc-mg-ERP"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="トップに戻る">
                                     <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="30"/>
@@ -239,7 +311,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LU2-bc-JLO">
-                                <rect key="frame" x="75" y="215" width="264" height="44"/>
+                                <rect key="frame" x="57" y="215" width="300" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="W4D-PJ-S2s"/>
+                                    <constraint firstAttribute="width" constant="300" id="nmm-eN-x3e"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="結果をシェアする">
                                     <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="30"/>
@@ -250,16 +328,21 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FeO-TK-gwm"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.74215686319999996" green="0.93431377410000005" blue="0.71862745289999996" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="LU2-bc-JLO" firstAttribute="top" secondItem="z4U-gH-5xD" secondAttribute="bottom" constant="100" id="2vY-zw-CJe"/>
                             <constraint firstItem="z4U-gH-5xD" firstAttribute="centerX" secondItem="Ud6-Im-qga" secondAttribute="centerX" id="30F-LV-1CQ"/>
                             <constraint firstItem="LU2-bc-JLO" firstAttribute="centerX" secondItem="Ud6-Im-qga" secondAttribute="centerX" id="W8G-e4-ClH"/>
+                            <constraint firstItem="vCk-1o-Fab" firstAttribute="top" secondItem="LU2-bc-JLO" secondAttribute="bottom" constant="210" id="c5I-s6-MY3"/>
                             <constraint firstItem="z4U-gH-5xD" firstAttribute="top" secondItem="FeO-TK-gwm" secondAttribute="top" constant="35" id="fuM-ln-lih"/>
+                            <constraint firstItem="vCk-1o-Fab" firstAttribute="centerX" secondItem="Ud6-Im-qga" secondAttribute="centerX" id="grm-Vg-ou1"/>
+                            <constraint firstItem="LU2-bc-JLO" firstAttribute="centerX" secondItem="Ud6-Im-qga" secondAttribute="centerX" id="tEs-jb-wXm"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="returnTopButton" destination="vCk-1o-Fab" id="eFz-ia-iNE"/>
                         <outlet property="scoreLabel" destination="z4U-gH-5xD" id="UNl-XN-DDg"/>
+                        <outlet property="shareButton" destination="LU2-bc-JLO" id="gth-l6-8vg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oti-tl-paf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -271,8 +354,11 @@
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
